@@ -1,3 +1,14 @@
-Flask
-SQLAlchemy
-Flask-SQLAlchemy
+Click==7.0
+Django==1.11.20
+django-forms-bootstrap==3.1.0
+Flask==1.0.2
+Flask-SQLAlchemy==2.3.2
+gunicorn==19.9.0
+itsdangerous==1.1.0
+Jinja2==2.10
+MarkupSafe==1.1.1
+pymongo==3.7.2
+pytz==2018.9
+SQLAlchemy==1.2.18
+virtualenv==16.4.3
+Werkzeug==0.14.1

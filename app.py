@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
@@ -5,10 +6,10 @@ import json
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost:27017'
-# MONGODB_PORT = 27017
-DBS_NAME = 'vgsales'
-COLLECTION_NAME = 'projects'
+
+MONGODB_HOST = os.getenv('HOST','<host>')
+DBS_NAME = os.getenv('DB','<db>')
+COLLECTION_NAME = os.getenv('COLL','<coll>')
 
 
 @app.route('/')
