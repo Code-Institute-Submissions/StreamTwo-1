@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% block content %}
+
+    <header>
+        <div class="container header">
+            <div class="jumbotron bg-image1">
+                <h1>The Reset Project</h1>
+                <p>GS International's Terra-Reformation Project</p>
+            </div>
+            <p>Welcome to The Reset Project!</p>
+            <p>Learn about our plan to save our world from its terrible fate.</p>
+            <p>Join us as we attempt to undo our past mistakes, and build a better future for all!</p>
+        </div>
+    </header>
+    <br>
+    <div class="container main-body">
+        <div class="row">
+            <div class="col-xs-12">
+                <img src="{{ url_for ('static',
+        filename='images/snow_storm.JPG')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
+            </div>
+            <div class="col-xs-12">
+                    <h2>The Plan</h2>
+                    <p>We at GS International along side Mako Labs are working on a solution to our
+                    climate change problem. We believe the main threat to our survival is a result of our
+                    own carelessness, but we also believe there is still hope.</p>
+                    <p>The solution: Terra-Reformation. Terra-Reformation is the process of reforming our
+                    planets atmosphere and environments back to their original, optimal states. A full reset,
+                    which is why we call this "The Reset Project."</p>
+                    <p>We know it sounds like science fiction, but we believe by using the very pollution,
+                    radiation, and filth that caused this problem in the first place, as the fuel for our
+                    Terraform device, (T.F.D. for short), we can both clean our planet and save the world all
+                    in one move.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="container">
+                    <h2>Why We Need This!</h2>
+                    <p>This graph shows the amount of people killed or injured by storms and other bad weather since 1997.</p>
+                    <div class="row">
+                        <div id="bar-graph" class="col-12">
+                        </div>
+                        <div class="select-menu">
+                        </div> 
+                    </div>
+                    <br>
+                    <p>As you can see the devastation caused by storms in resent years has reached horrifying levels.
+                    Climate Change is effecting our world more and more as the years go by. The death toll alone
+                    is reason enough to try anything we can to save us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Need More Convincing?</h2>
+            <div class="col-xs-12">
+                <p>This chart compares the total injuries or deaths by storms and other bad weather each year since 1997.</p>
+                 <div class="row">
+                        <div id="line-graph">
+                        </div>
+                        <div class="select-menu2">
+                        </div> 
+                    </div>
+                <p>The devastation from climate change is as far reaching as it is possible to be. We are only
+                showing the toll its taking on the United States, but don't be fooled this is a global issue.
+                Our own planet is killing us. We are in a fight for our lives and our only hope is Terra-Reformation.</p>
+            </div>
+            <div class="col-xs-12">
+                <img src="images/snow_storm.jpg" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
+                <p>We all have something to lose in this battle and with the constant polution and waste,
+                we are steady contributing to this problem. If we don't act and fast, we wont be here to see another
+                century pass us by. That is why we have a plan, and god willing the time to execute it.</p>
+                <p>“When you expect the world to end at any moment, you know there is no need to hurry. You take
+                your time, you do your work well.” ― Thomas Merton.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>In Conclusion</h2>
+                <p>The problem is great and the odds are stacked against us, but we will succeed it is our only
+                option. Our work continues every day in order to finish the T.F.D. Our passion for our work is unending,
+                we will save our home and each other, even if the world never knows we were here.</p>
+                <img src="images/snow_storm.jpg" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
+                <h3>This is The Reset Project.</h3>
+                <p>Welcome to the beginning of a new world for us all. Hopefully a better healthier world.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

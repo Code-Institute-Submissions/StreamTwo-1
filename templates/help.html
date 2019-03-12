@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container header">
+        <div class="jumbotron bg-image2">
+            <h1>How You Can Help</h1>
+            <h2>Get Involved</h2>
+            <p>GS International's Terra-Reformation Project</p>
+        </div>
+    </div>
+    <div class="container main-body">
+        <div class="row donation">
+            <h2>Make a Donation</h2>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h4>With the help of charatable donors we are approaching our goal.</h4>
+                <div id="pie-chart"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <form id="donation-form" oninput="x.value=parseInt(a.value)">
+                    <!-- <label for="name"><b>Full Name:</b></label>
+                    <input type="text" id="name" name="fullname" placeholder="Your name.." required>
+
+                    <label for="email"><b>Email:</b></label>
+                    <input type="text" id="email" name="email" placeholder="Your Email.." required> -->
+
+                    <label><b>Goal:</b> $</label>
+                    <input id="goal" type="number" disabled value="0">
+                    <br>
+                    <label><b>Current:</b> $</label>
+                    <input id="current" type="number" disabled value="0">
+                    <br>
+                    <label><b>Need:</b> $</label>
+                    <input id="need" type="number" disabled value="0">
+                    <br>
+                    <input type="range" id="a" name="a" value="0" min="0" max="50000">
+                    50000 = $<output name="x" for="a">0</output>
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <p id='thanks'>Thank You</p>
+    </div>
+
+{% endblock %}
