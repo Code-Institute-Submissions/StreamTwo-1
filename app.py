@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 
 
-MONGODB_HOST = os.getenv('HOST','<host>')
+MONGODB_HOST = os.getenv('MONGODB_URI','<host>')
 DBS_NAME = os.getenv('DB','<db>')
 COLLECTION_NAME = os.getenv('COLL','<coll>')
 
