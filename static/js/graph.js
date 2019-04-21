@@ -9,7 +9,8 @@ function makeGraphs(error, stormData) {
     }
 
     // Fields for select options
-    var optionsData = [{key:'Death'},
+    var optionsData = [{key:'All'},
+                       {key:'Death'},
                        {key:'Injury'}]
 
     // Crossfilter
@@ -106,7 +107,7 @@ function makeGraphs(error, stormData) {
             .title(function (d,i){
                 return d.key
             })
-            .promptText('All');
+            .promptText('Filter');
         
         var selectField2 = dc.selectMenu('.select-menu2');
 
@@ -116,7 +117,7 @@ function makeGraphs(error, stormData) {
             .title(function (d,i){
                 return d.key
             })
-            .promptText('All');
+            .promptText('Filter');
 
         // Line Chart
         var lineChart = dc.lineChart('#line-graph');
@@ -170,6 +171,8 @@ function makeGraphs(error, stormData) {
             }
             dc.renderAll();
         });
+
+
         
         var tO;
         $(window).resize(function(e,d,i){   
@@ -206,7 +209,7 @@ function makeGraphs(error, stormData) {
     $('#donation-form').submit(function (e) {
         e.preventDefault();
 
-        var amount = $(this).children('output').val();
+        var amount = $(this).children('#donatenumber').val();
         
         var update = donationUpdate(200000000000,30000000000,amount);
         if(update){

@@ -12,13 +12,13 @@
         </div>
     </header>
     <br>
-    <div class="container main-body">
+    <div class="container main-body home-page">
         <div class="row">
             <div class="col-xs-12">
                 <div class="container">
 
                     <img src="{{ url_for ('static',
-        filename='images/snow_storm.JPG')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
+        filename='images/snow_storm.JPG')}}" class="img-rounded" alt="Snow Storm">
                 </div>
             </div>
             <div class="col-xs-12">
@@ -45,7 +45,7 @@
                     <div class="row">
                         <div id="bar-graph" class="col-12">
                         </div>
-                        <div class="select-menu">
+                        <div class="select-menu" class="col-12">
                         </div> 
                     </div>
                     <br>
@@ -60,9 +60,9 @@
             <div class="col-xs-12">
                 <p>This chart compares the total injuries or deaths by storms and other bad weather each year since 1997.</p>
                  <div class="row">
-                        <div id="line-graph">
+                        <div id="line-graph" class="col-12">
                         </div>
-                        <div class="select-menu2">
+                        <div class="select-menu2" class="col-12">
                         </div> 
                     </div>
                 <p>The devastation from climate change is as far reaching as it is possible to be. We are only
@@ -71,7 +71,7 @@
             </div>
             <div class="col-xs-12">
                 <img src="{{ url_for ('static',
-        filename='images/cyclone.jpeg')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Cyclone">
+        filename='images/cyclone.jpeg')}}" class="img-rounded" alt="Cyclone">
                 <p>We all have something to lose in this battle and with the constant polution and waste,
                 we are steady contributing to this problem. If we don't act and fast, we wont be here to see another
                 century pass us by. That is why we have a plan, and god willing the time to execute it.</p>
@@ -86,9 +86,9 @@
                 option. Our work continues every day in order to finish the T.F.D. Our passion for our work is unending,
                 we will save our home and each other, even if the world never knows we were here.</p>
                 <img src="{{ url_for ('static',
-        filename='images/Scematics.png')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Scematics">
-                <h3>This is The Reset Project.</h3>
-                <p>Welcome to the beginning of a new world for us all. Hopefully a better healthier world.</p>
+        filename='images/Scematics.png')}}" class="img-rounded col-sm-offset-4 col-sm-4" alt="Scematics">
+                <h2 class='col-xs-12'>This is The Reset Project.</h3>
+                <p class='col-xs-12 text-center'>Welcome to the beginning of a new world for us all. Hopefully a better healthier world.</p>
             </div>
         </div>
     </div>

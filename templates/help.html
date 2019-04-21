@@ -16,12 +16,12 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <form id="donation-form" oninput="x.value=parseInt(a.value)">
-                    <!-- <label for="name"><b>Full Name:</b></label>
+                    <label for="name"><b>Full Name:</b></label>
                     <input type="text" id="name" name="fullname" placeholder="Your name.." required>
-
+                    <br>
                     <label for="email"><b>Email:</b></label>
-                    <input type="text" id="email" name="email" placeholder="Your Email.." required> -->
-
+                    <input type="text" id="email" name="email" placeholder="Your Email.." required>
+                    <br>
                     <label><b>Goal:</b> $</label>
                     <input id="goal" type="number" disabled value="0">
                     <br>
@@ -32,7 +32,7 @@
                     <input id="need" type="number" disabled value="0">
                     <br>
                     <input type="range" id="a" name="a" value="0" min="0" max="50000">
-                    50000 = $<output name="x" for="a">0</output>
+                    I want to donate: $<output type="number" id="donatenumber" name="x" for="a">0</output>
                     <br><br>
 
                     <input type="submit" value="Submit">

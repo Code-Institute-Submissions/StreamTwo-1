@@ -15,7 +15,7 @@ output {
 .container {
    margin: 5px auto;
    padding: 5px;
-   background-color: #f9f9f9;
+   /*background-color: #f9f9f9;*/
 }
 
 h1,h2 {
@@ -23,14 +23,18 @@ h1,h2 {
    text-decoration: underline;
 }
 
+.text-center{
+   text-align: center;
+}
+
 .bg-image1 {
    background-image: url("images/lightning.jpg");
-   background-size: 100em 50em;
+   /*background-size: 100em 50em;*/
 }
 
 .bg-image2 {
    background-image: url("images/lightning.jpg");
-   background-size: 100em 50em;
+   /*background-size: 100em 50em;*/
 }
 
 .bg-color {
@@ -84,3 +88,9 @@ h1,h2 {
 .about-page .jumbotron{
    color: white;
 }
+
+.home-page img{
+   max-width: 100%;
+   margin-bottom: 20px;
+}
+
