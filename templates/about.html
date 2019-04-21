@@ -1,27 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container header">
-        <div class="jumbotron bg-color">
+    <div class="container header about-page">
+        <div class="jumbotron bg-color row">
             <h1>About Us</h1>
-            <img src="{{ url_for ('static',
-        filename='images/scientists.JPG')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
-            <img src="{{ url_for ('static',
-        filename='images/engineers.JPG')}}" class="img-rounded" style="height: 20em; width: 30em;" alt="Snow Storm">
-            <p>Our team is made up of some of the best and brightest scientists and engineers
-            from around the world. We work tirelessly to create a lasting solution to our problem.
-            We have been working since 2015 to develop the T.F.D. </p>
-            <p>Never before has this many people from all over the world joined together in the persuit
-            of a singular goal. Our hope and efforts are what will save this world from absolute chaos.
-            We are GS International!</p>
+            <div class="row">
+                 <img class="col-md-6" src="{{ url_for ('static',
+            filename='images/scientists.jpg')}}" class="img-rounded" alt="Scientists">
+                <img class="col-md-6" src="{{ url_for ('static',
+            filename='images/engineers.jpg')}}" class="img-rounded" alt="Engineers">
+                <div class="col-xs-12">
+                    <p>Our team is made up of some of the best and brightest scientists and engineers
+                    from around the world. We work tirelessly to create a lasting solution to our problem.
+                    We have been working since 2015 to develop the T.F.D. </p>
+                    <p>Never before has this many people from all over the world joined together in the persuit
+                    of a singular goal. Our hope and efforts are what will save this world from absolute chaos.
+                    We are GS International!</p>
+                </div>
+            </div>
+               
         </div>
     </div>
-    <div class="container main-body">
+    <div class="container main-body team">
         <h2>Our Team Leaders</h2>
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="container card">
                     <img src="{{ url_for ('static',
-        filename='images/man1.png')}}" alt="Sid" style="width:100%">
+        filename='images/man1.png')}}" alt="Sid">
                     <h1>Sid Lenox</h1>
                     <p class="title">CEO & Founder, Team Leader</p>
                     <p>Head Engineer</p>
@@ -35,7 +40,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="container card">
                     <img src="{{ url_for ('static',
-        filename='images/man2.JPG')}}" alt="John" style="width:100%">
+        filename='images/man2.jpg')}}" alt="John" >
                     <h1>John Castle</h1>
                     <p class="title">Team Leader</p>
                     <p>Head of Research</p>
@@ -48,7 +53,7 @@
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                 <div class="container card">
                     <img src="{{ url_for ('static',
-        filename='images/woman1.JPG')}}" alt="Susan" style="width:100%">
+        filename='images/woman1.jpg')}}" alt="Susan">
                     <h1>Susan Hill</h1>
                     <p class="title">Team Leader</p>
                     <p>Head of Applied Sciences</p>

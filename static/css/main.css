@@ -76,4 +76,11 @@ h1,h2 {
 .card button:hover, a:hover {
    opacity: 0.7;
 }
+.team .card > img {
+   height: 415px;
+   width: 290px;
+}
 
+.about-page .jumbotron{
+   color: white;
+}
