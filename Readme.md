@@ -6,7 +6,7 @@ The Reset Project
 
 ### What is this site for?
 
-This is my final project for Code Institute Stream Two. The Example page can be found here: https://resetproject.herokuapp.com/
+This is my final project for Code Institute Stream Two. The Example page can be found here: [Example Site](https://theresetproject.herokuapp.com/)
 
 This is only an example website. Only some of the data is actually true
 but this site is largely fabricated simply to fit my narrative.
